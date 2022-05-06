@@ -1,8 +1,12 @@
 var valores = [];
 
-for (var index = 1; index <= 10; index++) {
-    var valor = prompt("Digite a frase/valor/palavra " + index);
+for (var index = 0; index < 10; index++) {
+    var valor = prompt("Digite a frase/valor/palavra " + (index + 1));
     valores.push(valor);
 }
 
-alert(valores[valor]);
+for(index = 0; index < valores.length; index++){
+    if(valores[index].toLocaleLowerCase().includes("a") == true){
+        console.log(valores[index]);
+    }
+}
