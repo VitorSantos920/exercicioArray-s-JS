@@ -6,7 +6,7 @@ for (var index = 0; index < 10; index++) {
 }
 
 for(index = 0; index < valores.length; index++){
-    if(valores[index].toLocaleLowerCase().includes("a") == true){
+    if(valores[index].toLocaleLowerCase().includes("a")){
         console.log(valores[index]);
     }
 }
